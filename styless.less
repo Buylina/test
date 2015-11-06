@@ -1,0 +1,307 @@
+@size: 50px;
+@color: #ffffff;
+@colororange: #f98561;
+@light-blue: #2190c1;
+@dark-blue: #2e3e4f;
+@foottext: #a3afb2;
+
+a {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.rect {
+  width: 180px;
+  margin: 0 auto;
+  div {
+    float: left;
+    width: @size;
+    height: @size;
+    background-color: @color;
+  }
+}
+
+.search {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.butmenu {
+  background-color: blue;
+}
+
+.container-fluid {
+
+}
+
+.marketing .span4 {
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .marketing .span4 + .span4 {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    margin-left: 100px;
+  }
+
+  .navbar-nav {
+    margin-left: 100px;
+  }
+
+  .navbar-right {
+    margin-right: 80px;
+  }
+
+  .jumbotron {
+    background-image: url("pic/block2.png");
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 491px;
+    a {
+
+      color: #fff;
+      background-color: @colororange;
+      border-color: @colororange;
+      display: inline-block;
+      padding: 6px 36px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 30px;
+
+    }
+  }
+
+  .textjumb {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    color: white;
+  }
+
+  .container-narrow {
+    margin: 0 auto;
+    max-width: 1000px;
+
+  }
+}
+
+// bs style
+@media (max-width: 767px) {
+  [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+
+  .span4 {
+    width: 228px;
+  }
+}
+
+@media (min-width: 1200px) {
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 1170px;
+  }
+
+  .span4 {
+    width: 370px;
+  }
+}
+
+.marketing {
+  position: relative;
+  .icon {
+    float: none;
+  }
+
+  .service {
+    background-color: @light-blue;
+    padding: 4px 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: 10px;
+    color: white;
+    a {
+      color: @light-blue
+    }
+  }
+}
+.portcon {
+  width: auto;
+  height: auto;
+  background-color: @dark-blue;
+
+}
+.portfolio {
+  margin-bottom: 20px;
+  a {
+    color: #fff;
+    background-color: @light-blue;
+    border-color: @light-blue;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+ // padding-bottom: 5%;
+}
+
+.port {
+  margin-top: 50px;
+  h3 {
+    color: @colororange;
+    margin-top: auto;
+  }
+}
+
+.colport {
+
+  padding-top: 60px;
+
+  text-align: left;
+  p {
+    font-size: 11pt;
+    margin-top: 10px;
+    color: white;
+    padding-bottom: 20px;
+  }
+  h4 {
+    padding-top: 20px;
+    color: @colororange;
+  }
+}
+
+.whatweoffer {
+
+  height: auto;
+  background-color: white;
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  h2 {
+    text-align: center;
+    color: @light-blue;
+  }
+  .centerp {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .offer {
+    h4 {
+      color: @light-blue;
+    }
+    p {
+      font-size: 13px;
+      text-align: justify;
+    }
+    a {
+      color: @light-blue
+
+    }
+    button {
+      float: right;
+    }
+    .but {
+
+      color: #fff;
+      background-color: @light-blue;
+      border-color: @light-blue;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 4px;
+
+    }
+  }
+}
+
+.footer {
+  //margin-right: auto;
+  //margin-left: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: @dark-blue;
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  h3 {
+    color: @colororange;
+  }
+  .proj {
+    padding-right: 0px;
+  }
+  p {
+    color: @foottext
+  }
+  .footcont {
+    margin-bottom: 10px;
+  }
+  .foot {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+    margin-bottom: 8px;
+  }
+}
+
+.nav {
+  .search {
+    a {
+      padding: 9px 0px;
+      margin-left: 50px;
+    }
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .but {
+    float: none !important;
+  }
+}
